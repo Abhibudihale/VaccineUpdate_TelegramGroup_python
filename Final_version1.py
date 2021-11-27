@@ -4,7 +4,7 @@ import requests
 from pygame import mixer
 from datetime import datetime, timedelta
 import time
-
+# change this url as per your Telegram bot Accounts API
 base_url = "https://api.telegram.org/bot2104687208:AAFjWXHwwVpe9SFthTHiw1QzrvSHOP3Wo2g"
 
 
@@ -39,7 +39,7 @@ def fun1(message):
 # ------------ Send Message Function --------------------
 def send_msg(answer, message_id):
     parameters = {
-        "chat_id": "-1001663608248",
+        "chat_id": "-1001663608248",  #chnage this value as per your Telegram Groups Chat_id
         "text": answer,
         "reply_to_message_id": message_id
     }
@@ -54,7 +54,7 @@ def send_msg(answer, message_id):
 # ---------------------------------------------------------------------
 def solve(text, message_id, name):
     # pin = input("Enter Pincode to Search vaccine")
-    age = 52
+    age = 18
     pincodes = [text]
     num_days = 1
 
